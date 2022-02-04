@@ -7,7 +7,7 @@ Route::get('/', function () {
 });
 
 /*=== NikkenCMS ===*/
-Route::get('login', 'NikkenCMS\NikkenCMSController@login');
+Route::get('login', 'NikkenCMS\NikkenCMSController@login')->name('login');
 Route::get('authLogin', 'NikkenCMS\NikkenCMSController@authLogin');
 Route::get('NikkenCMS/{view}', 'NikkenCMS\NikkenCMSController@getViwe');
 Route::get('NikkenCMSpro/getActions', 'NikkenCMS\NikkenCMSController@getActions');
