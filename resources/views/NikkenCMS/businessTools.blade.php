@@ -177,6 +177,10 @@
                                                     <span class="custom-control-label"></span><span class="new-chk-content">DIR</span>
                                                 </label>
                                                 <label class="custom-control custom-switch">
+                                                    <input type="checkbox" class="custom-control-input" name="chckSUP" id="chckSUP" onchange="$('#allRanges').prop('checked', false)" checked>
+                                                    <span class="custom-control-label"></span><span class="new-chk-content">SUP</span>
+                                                </label>
+                                                <label class="custom-control custom-switch">
                                                     <input type="checkbox" class="custom-control-input" name="chckEXE" id="chckEXE" onchange="$('#allRanges').prop('checked', false)" checked>
                                                     <span class="custom-control-label"></span><span class="new-chk-content">EXE</span>
                                                 </label>

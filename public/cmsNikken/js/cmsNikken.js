@@ -515,7 +515,7 @@ $("#allCountries").change(function () {
 });
 
 $("#allRanges").change(function () {
-    $("#chckDIR, #chckEXE, #chckPLA, #chckORO, #chckPLO, #chckDIA, #chckDRL").prop('checked', $(this).prop("checked"));
+    $("#chckDIR, #chckSUP, #chckEXE, #chckPLA, #chckORO, #chckPLO, #chckDIA, #chckDRL").prop('checked', $(this).prop("checked"));
 });
 
 function catchCheckboxDates(){

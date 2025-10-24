@@ -161,13 +161,14 @@ class NikkenCMSController extends Controller{
         $onClickNSite = request()->onClickNSite;
         $allowedUsersNsite = (trim(request()->allowedUsersNsite) == '') ? 'todos' : trim(request()->allowedUsersNsite);
         $chckDIR = (request()->chckDIR == 'on') ? 'DIR': null;
+        $chckSUP = (request()->chckSUP == 'on') ? 'SUP': null;
         $chckEXE = (request()->chckEXE == 'on') ? 'EXE': null;
         $chckPLA = (request()->chckPLA == 'on') ? 'PLA': null;
         $chckORO = (request()->chckORO == 'on') ? 'ORO': null;
         $chckPLO = (request()->chckPLO == 'on') ? 'PLO': null;
         $chckDIA = (request()->chckDIA == 'on') ? 'DIA': null;
         $chckDRL = (request()->chckDRL == 'on') ? 'DRL': null;
-        $rangos = $chckDIR . ', ' . $chckEXE . ', ' . $chckPLA . ', ' . $chckORO . ', ' . $chckPLO . ', ' . $chckDIA . ', ' . $chckDRL;
+        $rangos = "$chckDIR, $chckSUP, $chckEXE, $chckPLA, $chckORO, $chckPLO, $chckDIA, $chckDRL";
 
         if ($request->has('iconNsite') && request()->iconNsite) {
             $path = request()->file('iconNsite')->store(
